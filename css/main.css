@@ -1,0 +1,49 @@
+body {
+    background-color: #000000;
+}
+
+
+.full-page {
+    width: calc(100vw - 50px);
+    height: calc(100vh - 50px);
+
+}
+
+a {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+
+    color: rgb(220, 47, 47);
+    text-decoration: none;
+    position: absolute;
+    z-index: 1;
+
+    display: none;
+
+
+
+}
+
+a:hover {
+    color: rgb(102, 45, 175);
+    transition: 250ms;
+}
+
+button {
+    top: 30%;
+    left: 40%;
+    width: 20%;
+    height: 5%;
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border-color: rgb(220, 47, 47);
+    border-width: 0ch;
+    color: rgb(220, 47, 47);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9vw;
+}
