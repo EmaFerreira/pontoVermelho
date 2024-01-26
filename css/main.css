@@ -4,12 +4,10 @@ body {
 
 
 .full-page {
-    width: calc(100vw - 50px);
-    height: calc(100vh - 50px);
+    width: 100vw;
+    height: 100vh;
 
 }
-
-
 
 
 button {
@@ -30,7 +28,9 @@ button {
 .container-fluid {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 100;
-    color: rgb(80, 45, 175);
+    color: rgb(94, 45, 175);
+    margin-left: 0%;
+    margin-right: 0;
 }
 
 .container-fluid p {
@@ -50,14 +50,16 @@ button {
     color: rgb(220, 47, 47);
     font-size: clamp(14px, 3vw, 28px);
     margin-bottom: 0.75cm;
+    margin-top: 1cm;
 }
 
 #notes {
-    color: rgb(209, 94, 94);
-    margin-top: 1.5cm;
-    margin-bottom: 0%;
+    color: rgb(94, 45, 175);
+    margin-top: 0.5cm;
+    margin-bottom: 3cm;
     padding-top: 0%;
     padding-bottom: 0%;
+
 
     font-size: clamp(8px, 0.7vw, 16px);
 }
@@ -66,20 +68,23 @@ a {
     display: inline;
     color: rgb(220, 47, 47);
     text-decoration: none !important;
+
 }
 
-#notes a {
-    color: rgb(209, 94, 94);
+#credits {
+    color: rgb(110, 99, 128);
+    font-size: clamp(10px, 1vw, 16px);
+    font-weight: 100;
 }
 
-a:hover, 
-#notes a:hover {
-    color: rgb(102, 45, 175);
+a:hover,
+#credits:hover {
+    color: rgb(94, 45, 175);
     transition: 250ms;
 }
 
 
-#linkFinal{
+#linkFinal {
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
     transform: rotate(-90deg);
@@ -96,6 +101,6 @@ a:hover,
 }
 
 #linkFinal:hover {
-    color: rgb(102, 45, 175);
+    color: rgb(94, 45, 175);
     transition: 250ms;
 }
