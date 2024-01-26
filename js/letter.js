@@ -170,7 +170,7 @@ function drawLetter() {
 							signChar += 0.2;
 							endingMillis = millisecond
 						} else {
-							if (millisecond - endingMillis > 10000)
+							if (millisecond - endingMillis > 4000)
 								happyEndBool = true;
 
 						}

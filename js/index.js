@@ -39,20 +39,20 @@ async function localizacao() {
 
         texto = `Your current position is: lat ${lat} & lon ${long}. And you are standing in ${local[0].name}. Exactly at ${hours} hours and ${minutes} minutes of today.`
         textoFinal = `Your were present at: lat ${lat} & lon ${long} in ${local[0].name}.`
-        textoFinalDois =`Exactly at ${hours} hours and ${minutes} minutes of today.`
+        textoFinalDois = `Exactly at ${hours} hours and ${minutes} minutes of today.`
     } else {
         alert('Local exato erro:' + response.statusText)
     }
 
-    //simulação
-    //hours = 10
+   // simulação
+    hours = 1
 
     if (hours < 6 || hours > 23) {
-        timmerWritting = 20
-        textMove = 1.2
+        timmerWritting = 20 / 3
+        textMove = 1.2 / 3
 
-        timmerClickMin = 40
-        timmerClickMax = 150
+        timmerClickMin = 40 / 3
+        timmerClickMax = 150 / 3
     } else if (hours < 11) {
         timmerWritting = 300
         textMove = 0.05

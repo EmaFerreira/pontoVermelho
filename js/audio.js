@@ -1,5 +1,6 @@
 let osc = [];
 let freq = [];
+let freqL;
 let amp = [];
 let ampVol;
 
@@ -14,6 +15,7 @@ let millisecond, prevMillisAud, prevClick;
 
 let termosAceites = false;
 let playAudio = false;
+
 
 
 
@@ -33,8 +35,10 @@ function drawAudio() {
 
         if (!playAudio)
             startOsc();
-        else
+        else {
             playOsc();
+        }
+
     }
 }
 
@@ -42,6 +46,7 @@ function drawAudio() {
 function termoAudio() {
     // freq = [155, 160, 56, 120, 145, 300];
     freq = [155, 160, 56, 120];
+    freqL = freq.length
 
     ampVol = 0;
     mainAmp = 0;
@@ -108,18 +113,27 @@ function playOsc() {
         }
 
         if (freq[0] > 150)
-            change = random(-1, 10) * -1
+            change = random(-1, 20) * -1
         else if (freq[0] <= 155)
-            change = random(-1, 10)
+            change = random(-1, 20)
 
         prevMillisAud = millisecond
+
+        moreOSC();
     }
+
+    if (happyEndBool)
+        changeAudioByLetter()
 }
 
 function changeAudioByLetter() {
     //mainAmp = 0.2;
 
-    mainFreq = map(xHeight, letterW / 200 * -1, letterW / 50, 280, 320)
+
+    if (happyEndBool)
+        mainFreq = random(280, 320)
+    else
+        mainFreq = map(xHeight, letterW / 200 * -1, letterW / 50, 280, 320)
 
     mainClick.freq(mainFreq + 2);
     mainOsc.freq(mainFreq, 1);
@@ -159,4 +173,33 @@ function stopAudio() {
 
     mainOsc.amp(ampVol, 1)
     mainClick.amp(ampVol, 1);
+}
+
+function moreOSC() {
+
+    //more oscillators
+    let moreF = [145, 300, 610, 950]
+    if (happyEndBool) {
+        if (osc.length < 8) {
+            for (i = 0; i < 4; i++) {
+                append(freq, moreF[i])
+
+                osc[i + freqL] = new p5.Oscillator('sine');
+                osc[i + freqL].freq(freq[i + freqL]);
+                osc[i + freqL].amp(0);
+                osc[i + freqL].start();
+            }
+        }
+
+        //for clicks 
+        changeAudioByLetterSpace()
+
+        for (i = 0; i < 4; i++) {
+            if (i < 2)
+                osc[i + freqL].amp(0.05, 3);
+            else
+                osc[i + freqL].amp(0.01, 3);
+
+        }
+    }
 }

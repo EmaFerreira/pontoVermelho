@@ -56,10 +56,11 @@ function draw() {
             //quando a janela deixa de ter foco - 1ª vez que acontece - não reversível
             finalStatement();
             stopAudio();
-        } 
-        
+        }
+
         if (happyEndBool) {
             happyEnd();
+            drawAudio();
         }
 
     }
