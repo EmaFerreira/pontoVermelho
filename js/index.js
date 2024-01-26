@@ -44,15 +44,15 @@ async function localizacao() {
         alert('Local exato erro:' + response.statusText)
     }
 
-   // simulação
+    // simulação
     hours = 1
 
     if (hours < 6 || hours > 23) {
-        timmerWritting = 20 / 3
-        textMove = 1.2 / 3
+        timmerWritting = 20
+        textMove = 1.2
 
-        timmerClickMin = 40 / 3
-        timmerClickMax = 150 / 3
+        timmerClickMin = 40
+        timmerClickMax = 150
     } else if (hours < 11) {
         timmerWritting = 300
         textMove = 0.05

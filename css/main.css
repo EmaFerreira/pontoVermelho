@@ -9,29 +9,8 @@ body {
 
 }
 
-a {
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 100;
-
-    color: rgb(220, 47, 47);
-    text-decoration: none;
-    position: absolute;
-    z-index: 1;
-
-    display: none;
 
 
-
-}
-
-a:hover {
-    color: rgb(102, 45, 175);
-    transition: 250ms;
-}
 
 button {
     top: 30%;
@@ -46,4 +25,77 @@ button {
     color: rgb(220, 47, 47);
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.9vw;
+}
+
+.container-fluid {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    color: rgb(80, 45, 175);
+}
+
+.container-fluid p {
+    margin-top: 0.015cm;
+    margin-bottom: 0%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+
+    font-size: clamp(10px, 1vw, 16px);
+}
+
+.container-fluid span {
+    color: rgb(220, 47, 47);
+}
+
+.container-fluid h1 {
+    color: rgb(220, 47, 47);
+    font-size: clamp(14px, 3vw, 28px);
+    margin-bottom: 0.75cm;
+}
+
+#notes {
+    color: rgb(209, 94, 94);
+    margin-top: 1.5cm;
+    margin-bottom: 0%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+
+    font-size: clamp(8px, 0.7vw, 16px);
+}
+
+a {
+    display: inline;
+    color: rgb(220, 47, 47);
+    text-decoration: none !important;
+}
+
+#notes a {
+    color: rgb(209, 94, 94);
+}
+
+a:hover, 
+#notes a:hover {
+    color: rgb(102, 45, 175);
+    transition: 250ms;
+}
+
+
+#linkFinal{
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+
+    color: rgb(220, 47, 47);
+    text-decoration: none;
+    position: absolute;
+    z-index: 1;
+
+    display: none;
+}
+
+#linkFinal:hover {
+    color: rgb(102, 45, 175);
+    transition: 250ms;
 }
