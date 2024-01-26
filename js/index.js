@@ -29,7 +29,7 @@ async function callAPIS() {
 
 async function localizacao() {
     // pedido à API usando a função fetch ---- não esquecer o await, que só funciona com funções assíncronas!
-    let response = await fetch(`http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${long}&limit=5&appid=a5e6025f02bfb73d9f950c50cf9d17e4`)
+    let response = await fetch(`https://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${long}&limit=5&appid=a5e6025f02bfb73d9f950c50cf9d17e4`)
 
     // o ok refere-se aos códigos 200 -- o circuito funcionou
     if (response.ok) {
