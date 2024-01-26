@@ -45,7 +45,7 @@ async function localizacao() {
     }
 
     // simulação
-    hours = 1
+    // hours = 1
 
     if (hours < 6 || hours > 23) {
         timmerWritting = 20
