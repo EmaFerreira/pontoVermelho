@@ -37,9 +37,9 @@ async function localizacao() {
         // console.log(`And you are standing in ${local[0].name}`);
         //console.log(`Exactly at ${hours} hours and ${minutes} minutes of today`);
 
-        texto = `Your current position is: lat ${lat} & lon ${long}. And you are standing in ${local[0].name}. Exactly at ${hours} hours and ${minutes} minutes of today.`
-        textoFinal = `Your were present at: lat ${lat} & lon ${long} in ${local[0].name}.`
-        textoFinalDois = `Exactly at ${hours} hours and ${minutes} minutes of today.`
+        texto = `Your current position is: lat ${lat} & lon ${long}. And you are standing in ${local[0].name}. Exactly at ${hours} hours and ${minutes} minutes today.`
+        textoFinal = `Your have been present at: lat ${lat} & lon ${long} in ${local[0].name}.`
+        textoFinalDois = `Since ${hours} hours and ${minutes} minutes today.`
     } else {
         alert('Local exato erro:' + response.statusText)
     }
