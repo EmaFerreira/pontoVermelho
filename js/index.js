@@ -49,7 +49,7 @@ async function localizacao() {
 
     if (hours < 6 || hours > 23) {
         timmerWritting = 20
-        textMove = 1.2
+        textMove = 0.9
 
         timmerClickMin = 40
         timmerClickMax = 150

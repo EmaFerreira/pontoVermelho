@@ -107,7 +107,7 @@ function textoRodape() {
     //texto da esquerda
     push();
     let angle = radians(-90);
-    translate(capturesize - 10, -capturesize);
+    translate(capturesize - capturesize/12, -capturesize);
     rotate(angle);
     textSize(canvas.width / 60);
     textFont("Courier New");

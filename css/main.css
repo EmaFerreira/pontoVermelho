@@ -77,9 +77,13 @@ a {
     font-weight: 100;
 }
 
-a:hover,
+a:hover {
+    color: rgb(110, 99, 128);
+    transition: 250ms;
+}
+
 #credits:hover {
-    color: rgb(94, 45, 175);
+    color: rgb(220, 47, 47);
     transition: 250ms;
 }
 
