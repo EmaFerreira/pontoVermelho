@@ -28,7 +28,7 @@ button {
 .container-fluid {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 100;
-    color: rgb(94, 45, 175);
+    color: rgb(110, 99, 128);
     margin-left: 0%;
     margin-right: 0;
 }
@@ -54,9 +54,9 @@ button {
 }
 
 #notes {
-    color: rgb(94, 45, 175);
+    color: rgb(110, 99, 128);
     margin-top: 0.5cm;
-    margin-bottom: 3cm;
+    margin-bottom: clamp(0cm, 10vh, 3cm);
     padding-top: 0%;
     padding-bottom: 0%;
 
@@ -72,18 +72,18 @@ a {
 }
 
 #credits {
-    color: rgb(110, 99, 128);
+    color:rgb(220, 47, 47);
     font-size: clamp(10px, 1vw, 16px);
     font-weight: 100;
 }
 
 a:hover {
-    color: rgb(110, 99, 128);
+    color:  rgb(114, 42, 153);
     transition: 250ms;
 }
 
 #credits:hover {
-    color: rgb(220, 47, 47);
+    color:  rgb(114, 42, 153);
     transition: 250ms;
 }
 
@@ -105,6 +105,6 @@ a:hover {
 }
 
 #linkFinal:hover {
-    color: rgb(94, 45, 175);
+    color: rgb(114, 42, 153);
     transition: 250ms;
 }
