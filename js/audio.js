@@ -83,7 +83,7 @@ function termoAudio() {
 
 
 function startOsc() {
-    ampVol = 0.1;
+    ampVol = 0.15;
     for (let i = 0; i < osc.length; i++) {
         if (i < 1)
             osc[i].amp(ampVol, 2);
