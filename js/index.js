@@ -45,7 +45,7 @@ async function localizacao() {
     }
 
     // simulação
-    // hours = 1
+    //hours = 1
 
     if (hours < 6 || hours > 23) {
         timmerWritting = 45
@@ -55,19 +55,19 @@ async function localizacao() {
         timmerClickMax = 150
     } else if (hours < 11) {
         timmerWritting = 300
-        textMove = 0.05
+        textMove = 0.4
 
         timmerClickMin = 450
         timmerClickMax = 1000
     } else if (hours < 19) {
         timmerWritting = 200
-        textMove = 0.1
+        textMove = 0.6
 
         timmerClickMin = 200
         timmerClickMax = 310
     } else if (hours < 22) {
         timmerWritting = 80
-        textMove = 0.7
+        textMove = 0.75
 
         timmerClickMin = 80
         timmerClickMax = 300
